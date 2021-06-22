@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    tools:context=".PerfilFragment">
+
+
+    <ImageView
+        android:id="@+id/white_bg_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_white_profile"
+        android:layout_marginTop="230dp"/>
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="160dp"
+        android:src="@drawable/profile_pic" />
+
+    <EditText
+        android:id="@+id/editTextNickname"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableEnd="@drawable/person_icon"
+        android:ems="10"
+        android:inputType="none"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:paddingBottom="20dp"
+        android:text="Nickname" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:drawableEnd="@drawable/email_icon"
+        android:ems="10"
+        android:inputType="none"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:paddingBottom="20dp"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/editTextResidence"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="140dp"
+        android:drawableEnd="@drawable/location_icon"
+        android:ems="10"
+        android:inputType="none"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:paddingBottom="20dp"
+        android:text="Residence" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="210dp"
+        android:drawableEnd="@drawable/phone_icon"
+        android:ems="10"
+        android:inputType="none"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:paddingBottom="20dp"
+        android:text="Phone" />
+
+    <android.widget.Button
+        android:id="@+id/button"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/botaolaranja"
+        android:text="Atualizar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <android.widget.Button
+        android:id="@+id/botaoLogout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/botao_logout"
+        android:textColor="#FFFFFF" />
+
+    <android.widget.Button
+        android:id="@+id/botaoChangePassword"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="start|top"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:text="Change Password"
+        android:background="@drawable/botaolaranja"
+        android:textColor="#FFFFFF" />
+
+</FrameLayout>

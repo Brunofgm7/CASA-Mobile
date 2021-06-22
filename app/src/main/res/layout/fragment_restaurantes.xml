@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    tools:context=".RestaurantesFragment">
+
+    <RelativeLayout
+        android:id="@+id/botaoBaixaDoPorto"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/botao_branco_restaurantes">
+
+        <ImageView
+            android:id="@+id/foto_baixa_porto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="foto_baixa_porto"
+            android:paddingTop="3dp"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:src="@drawable/baixa_porto_rounded" />
+
+        <TextView
+            android:id="@+id/textViewBaixaPorto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="33dp"
+            android:layout_toEndOf="@+id/foto_baixa_porto"
+            android:text="Baixa do Porto"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/botaoTerco"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="125dp"
+        android:background="@drawable/botao_branco_restaurantes">
+
+        <ImageView
+            android:id="@+id/foto_terco"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/azulejo_rounded"
+            android:paddingTop="3dp"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:contentDescription="foto_terco"/>
+
+        <TextView
+            android:id="@+id/textViewTerco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="33dp"
+            android:layout_toEndOf="@+id/foto_terco"
+            android:text="Terço"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/botaoHospital"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/botao_branco_restaurantes">
+
+        <ImageView
+            android:id="@+id/foto_ju"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/hospital_rounded"
+            android:paddingTop="3dp"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:contentDescription="foto_ju"/>
+
+        <TextView
+            android:id="@+id/textViewJu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@+id/foto_ju"
+            android:text="Hospital de Joaquim Urbano"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <android.widget.Button
+        android:id="@+id/botaoPerfil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/botao_perfil"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textViewRestaurantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="150dp"
+        android:text="Restaurantes"
+        android:textColor="#FFFFFF"
+        android:textSize="55sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewSelecione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecione o mais próximo a ti."
+        android:layout_marginTop="220dp"
+        android:layout_marginStart="30dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
+
+
+</FrameLayout>

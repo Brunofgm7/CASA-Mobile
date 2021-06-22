@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#21AEFF"
+    tools:context=".LoginFragment">
+
+    <TextView
+        android:id="@+id/textViewOla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="275dp"
+        android:gravity="center|start"
+        android:text="Olá!"
+        android:textColor="#FFFFFF"
+        android:textSize="38sp" />
+
+    <TextView
+        android:id="@+id/textViewEntreNaSuaContaCasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="Entre na sua conta Casa:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/textEmail"
+        android:layout_width="355dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-60dp"
+        android:autofillHints="email"
+        android:background="@drawable/custom_input_login"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/textPassword"
+        android:layout_width="355dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-130dp"
+        android:autofillHints="password"
+        android:background="@drawable/custom_input_login"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/imageViewLogoCASA"
+        android:layout_width="278dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="75dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logotipo_casa" />
+
+    <android.widget.Button
+        android:id="@+id/botaoLogin"
+        android:layout_width="355dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/botaolaranja"
+        android:text="Entrar"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewNaoPossuiConta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Não possui uma conta? "
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewNaoPossuiContaRegistar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:singleLine="true"
+            android:text="Registar"
+            android:textColor="#21FFA6"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="95dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewEsqueceuAlgumCampo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Esqueceste algum campo? "
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewEsqueceuAlgumCampoRecuperar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:singleLine="true"
+            android:text="Recuperar"
+            android:textColor="#FF5700"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
