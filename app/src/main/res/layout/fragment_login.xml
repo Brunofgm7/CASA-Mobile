@@ -10,9 +10,9 @@
         android:id="@+id/textViewOla"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="start"
         android:layout_marginStart="30dp"
         android:layout_marginTop="275dp"
-        android:gravity="center|start"
         android:text="Olá!"
         android:textColor="#FFFFFF"
         android:textSize="38sp" />
@@ -21,20 +21,21 @@
         android:id="@+id/textViewEntreNaSuaContaCasa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center|start"
+        android:layout_gravity="start"
         android:layout_marginStart="30dp"
-        android:layout_marginBottom="15dp"
-        android:gravity="center"
+        android:layout_marginTop="350dp"
         android:text="Entre na sua conta Casa:"
         android:textColor="#FFFFFF"
         android:textSize="16sp" />
 
     <EditText
         android:id="@+id/textEmail"
-        android:layout_width="355dp"
+        android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:layout_marginBottom="-60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:autofillHints="email"
         android:background="@drawable/custom_input_login"
         android:hint="Email"
@@ -45,10 +46,12 @@
 
     <EditText
         android:id="@+id/textPassword"
-        android:layout_width="355dp"
+        android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:layout_marginBottom="-130dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:autofillHints="password"
         android:background="@drawable/custom_input_login"
         android:hint="Senha"
@@ -64,14 +67,17 @@
         android:layout_gravity="center|top"
         android:layout_marginTop="75dp"
         android:adjustViewBounds="true"
-        android:src="@drawable/logotipo_casa" />
+        android:src="@drawable/logotipo_casa"
+        android:contentDescription="logotipo" />
 
     <android.widget.Button
         android:id="@+id/botaoLogin"
-        android:layout_width="355dp"
+        android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:layout_marginTop="200dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/botaolaranja"
         android:text="Entrar"
         android:textAllCaps="false"

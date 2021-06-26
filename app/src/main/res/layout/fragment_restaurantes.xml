@@ -8,9 +8,11 @@
 
     <RelativeLayout
         android:id="@+id/botaoBaixaDoPorto"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/botao_branco_restaurantes">
 
         <ImageView
@@ -48,10 +50,12 @@
 
     <RelativeLayout
         android:id="@+id/botaoTerco"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_gravity="center"
         android:layout_marginTop="125dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/botao_branco_restaurantes">
 
         <ImageView
@@ -89,10 +93,12 @@
 
     <RelativeLayout
         android:id="@+id/botaoHospital"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_gravity="center"
         android:layout_marginTop="250dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/botao_branco_restaurantes">
 
         <ImageView
@@ -130,7 +136,7 @@
         android:id="@+id/botaoPerfil"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_gravity="right|top"
+        android:layout_gravity="end|top"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/botao_perfil"

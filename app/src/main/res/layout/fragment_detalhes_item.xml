@@ -9,10 +9,12 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
         android:backgroundTint="#E621AEFF"
         app:cardCornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,7 +24,8 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="500dp">
+            android:layout_height="match_parent"
+            android:layout_marginBottom="90dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -34,44 +37,48 @@
                     android:id="@+id/textViewFormulario"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="left"
+                    android:layout_gravity="start"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="30dp"
                     android:text="Formulário:"
                     android:textColor="#FFFFFF"
-                    android:textSize="25dp"/>
+                    android:textSize="25sp"/>
 
                 <EditText
                     android:id="@+id/TextNrRefeicoes"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
                     android:backgroundTint="#FFFFFF"
                     android:ems="10"
                     android:textColorHint="#FFFFFF"
                     android:hint="Nº de refeições"
+                    android:importantForAutofill="no"
                     android:inputType="number"
                     android:paddingBottom="20dp"
                     android:textColor="#FFFFFF" />
 
                 <EditText
                     android:id="@+id/TextStock"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
                     android:paddingBottom="20dp"
                     android:textColor="#FFFFFF"
                     android:textColorHint="#FFFFFF"
                     android:backgroundTint="#FFFFFF"
                     android:inputType="text"
+                    android:importantForAutofill="no"
                     android:hint="Stock *" />
 
                 <EditText
                     android:id="@+id/TextNotas"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:textColor="#FFFFFF"
@@ -79,31 +86,36 @@
                     android:backgroundTint="#FFFFFF"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
                     android:paddingBottom="20dp"
                     android:inputType="text"
+                    android:importantForAutofill="no"
                     android:hint="Notas *" />
 
 
                 <EditText
                     android:id="@+id/TextKitDetails"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
                     android:backgroundTint="#FFFFFF"
                     android:ems="10"
                     android:hint="Kit details *"
                     android:inputType="text"
+                    android:importantForAutofill="no"
                     android:paddingBottom="20dp"
                     android:textColor="#FFFFFF"
                     android:textColorHint="#FFFFFF" />
 
                 <Button
                     android:id="@+id/buttonUpdateCheckIn"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
                     android:ems="10"
                     android:hint="Check In *"
                     android:textAllCaps="false"
@@ -112,10 +124,11 @@
 
                 <Button
                     android:id="@+id/buttonUpdateCheckOut"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
                     android:ems="10"
                     android:hint="Check Out *"
                     android:textAllCaps="false"
@@ -124,210 +137,240 @@
 
                 <EditText
                     android:id="@+id/TextAppetizer"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
                     android:backgroundTint="#FFFFFF"
                     android:ems="10"
                     android:hint="Appetizer *"
                     android:inputType="text"
+                    android:importantForAutofill="no"
                     android:paddingBottom="20dp"
                     android:textColor="#FFFFFF"
                     android:textColorHint="#FFFFFF" />
 
                 <EditText
                     android:id="@+id/TextSideDish"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
                     android:backgroundTint="#FFFFFF"
                     android:ems="10"
                     android:hint="Side Dish *"
                     android:inputType="text"
+                    android:importantForAutofill="no"
                     android:paddingBottom="20dp"
                     android:textColor="#FFFFFF"
                     android:textColorHint="#FFFFFF" />
 
                 <EditText
                     android:id="@+id/TextDessert"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
                     android:backgroundTint="#FFFFFF"
                     android:ems="10"
                     android:hint="Dessert  *"
                     android:inputType="number"
+                    android:importantForAutofill="no"
                     android:paddingBottom="20dp"
                     android:textColor="#FFFFFF"
                     android:textColorHint="#FFFFFF" />
 
                 <EditText
                     android:id="@+id/TextGaps"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
                     android:backgroundTint="#FFFFFF"
                     android:ems="10"
                     android:hint="Gaps"
                     android:inputType="number"
+                    android:importantForAutofill="no"
                     android:paddingBottom="20dp"
                     android:textColor="#FFFFFF"
                     android:textColorHint="#FFFFFF" />
 
                 <EditText
                     android:id="@+id/TextSpoons"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
                     android:backgroundTint="#FFFFFF"
                     android:ems="10"
                     android:hint="Spoons"
                     android:inputType="number"
+                    android:importantForAutofill="no"
                     android:paddingBottom="20dp"
                     android:textColor="#FFFFFF"
                     android:textColorHint="#FFFFFF" />
 
                 <EditText
                     android:id="@+id/TextNapkin"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
                     android:backgroundTint="#FFFFFF"
                     android:ems="10"
                     android:hint="Napkin"
                     android:inputType="number"
+                    android:importantForAutofill="no"
                     android:paddingBottom="20dp"
                     android:textColor="#FFFFFF"
                     android:textColorHint="#FFFFFF" />
 
                 <EditText
                     android:id="@+id/TextCuvettes"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
                     android:backgroundTint="#FFFFFF"
                     android:ems="10"
                     android:hint="Cuvettes"
                     android:inputType="number"
+                    android:importantForAutofill="no"
                     android:paddingBottom="20dp"
                     android:textColor="#FFFFFF"
                     android:textColorHint="#FFFFFF" />
 
                 <EditText
                     android:id="@+id/TextCover"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
                     android:backgroundTint="#FFFFFF"
                     android:ems="10"
                     android:hint="Cover"
                     android:inputType="number"
+                    android:importantForAutofill="no"
                     android:paddingBottom="20dp"
                     android:textColor="#FFFFFF"
                     android:textColorHint="#FFFFFF" />
 
                 <EditText
                     android:id="@+id/TextKitchenPaperRolls"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
                     android:backgroundTint="#FFFFFF"
                     android:ems="10"
                     android:hint="Kitchen Paper Rolls"
                     android:inputType="number"
+                    android:importantForAutofill="no"
                     android:paddingBottom="20dp"
                     android:textColor="#FFFFFF"
                     android:textColorHint="#FFFFFF" />
 
                 <EditText
                     android:id="@+id/TextRollsToiletPaper"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
                     android:backgroundTint="#FFFFFF"
                     android:ems="10"
                     android:hint="Rolls Toilet Paper"
                     android:inputType="number"
+                    android:importantForAutofill="no"
                     android:paddingBottom="20dp"
                     android:textColor="#FFFFFF"
                     android:textColorHint="#FFFFFF" />
 
                 <EditText
                     android:id="@+id/TextMistolim"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
                     android:backgroundTint="#FFFFFF"
                     android:ems="10"
                     android:hint="Mistolim"
                     android:inputType="number"
+                    android:importantForAutofill="no"
                     android:paddingBottom="20dp"
                     android:textColor="#FFFFFF"
                     android:textColorHint="#FFFFFF" />
 
                 <EditText
                     android:id="@+id/TextDishwashingDetergent"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
                     android:backgroundTint="#FFFFFF"
                     android:ems="10"
                     android:hint="Dishwashing Detergent"
                     android:inputType="number"
+                    android:importantForAutofill="no"
                     android:paddingBottom="20dp"
                     android:textColor="#FFFFFF"
                     android:textColorHint="#FFFFFF" />
 
                 <EditText
                     android:id="@+id/TextFloorDetergent"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
                     android:backgroundTint="#FFFFFF"
                     android:ems="10"
                     android:hint="Floor Detergent"
                     android:inputType="number"
+                    android:importantForAutofill="no"
                     android:paddingBottom="20dp"
                     android:textColor="#FFFFFF"
                     android:textColorHint="#FFFFFF" />
 
                 <EditText
                     android:id="@+id/TextGloves"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
                     android:backgroundTint="#FFFFFF"
                     android:ems="10"
                     android:hint="Gloves"
                     android:inputType="number"
+                    android:importantForAutofill="no"
                     android:paddingBottom="20dp"
                     android:textColor="#FFFFFF"
                     android:textColorHint="#FFFFFF" />
 
                 <EditText
                     android:id="@+id/TextMasks"
-                    android:layout_width="280dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
                     android:backgroundTint="#FFFFFF"
                     android:ems="10"
                     android:hint="Masks"
                     android:inputType="number"
+                    android:importantForAutofill="no"
                     android:paddingBottom="20dp"
                     android:textColor="#FFFFFF"
                     android:textColorHint="#FFFFFF" />

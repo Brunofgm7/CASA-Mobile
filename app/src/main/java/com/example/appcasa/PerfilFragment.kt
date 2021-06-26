@@ -3,8 +3,6 @@ package com.example.appcasa
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,6 +10,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -54,10 +53,18 @@ class PerfilFragment : Fragment() {
             val email: SharedPreferences = activity!!.getSharedPreferences("email", Context.MODE_PRIVATE)
             email.edit().remove("email").apply()
 
+            val count: Int =  requireActivity().supportFragmentManager.backStackEntryCount
+
+            for (i in 0 until count) {
+                requireActivity().supportFragmentManager.popBackStack()
+            }
+
             requireActivity().supportFragmentManager
                 .beginTransaction()
                 .replace(R.id.frame_layout, loginFragment)
                 .commit()
+
+
         }
 
         return view

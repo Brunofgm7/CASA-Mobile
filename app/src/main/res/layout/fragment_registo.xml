@@ -21,11 +21,12 @@
 
     <EditText
         android:id="@+id/textNicknameRegisto"
-        android:layout_width="340dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center|start"
-        android:layout_marginStart="30dp"
+        android:layout_gravity="center"
         android:layout_marginBottom="130dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:autofillHints="nome"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
@@ -38,11 +39,12 @@
 
     <EditText
         android:id="@+id/textEmailRegisto"
-        android:layout_width="340dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center|start"
-        android:layout_marginStart="30dp"
+        android:layout_gravity="center"
         android:layout_marginBottom="65dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:autofillHints="email"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
@@ -54,14 +56,15 @@
         app:theme="@style/textInputLayoutColors" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="340dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center|start"
-        android:layout_marginStart="30dp"
+        android:layout_gravity="center"
         android:autofillHints="password"
         android:textColor="#FFFFFF"
         app:boxStrokeWidth="0dp"
         app:boxStrokeWidthFocused="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         app:hintEnabled="false"
         app:passwordToggleDrawable="@drawable/show_password_selector"
         app:passwordToggleEnabled="true"
@@ -82,11 +85,12 @@
 
     <EditText
         android:id="@+id/textResidenceRegisto"
-        android:layout_width="340dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center|start"
-        android:layout_marginStart="30dp"
+        android:layout_gravity="center"
         android:layout_marginBottom="-65dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:autofillHints="apelido"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
@@ -99,11 +103,12 @@
 
     <EditText
         android:id="@+id/textPhoneRegisto"
-        android:layout_width="340dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center|start"
-        android:layout_marginStart="30dp"
+        android:layout_gravity="center"
         android:layout_marginBottom="-130dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:autofillHints="apelido"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
@@ -116,10 +121,12 @@
 
     <android.widget.Button
         android:id="@+id/botaoRegisto"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="130dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:width="200dp"
         android:background="@drawable/botaolaranja"
         android:text="Registar"
@@ -129,10 +136,12 @@
 
     <android.widget.Button
         android:id="@+id/botaoJaTemConta"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:width="200dp"
         android:background="@drawable/contornobotaobranco"
         android:text="Iniciar sessão"
