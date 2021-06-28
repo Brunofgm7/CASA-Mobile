@@ -223,7 +223,7 @@ class AdicionarItemFragment : Fragment() {
                             }
                         }
                     } else {
-                        Toast.makeText(activity, "Logged In Attempt Failed", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(activity, "Erro", Toast.LENGTH_SHORT).show()
                     }
                 }
 

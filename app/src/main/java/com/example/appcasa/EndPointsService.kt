@@ -87,8 +87,8 @@ interface EndPointsService {
     @DELETE("/api/item/{id}")
     fun deleteItem(@Path("id") id: String): Call<Unit>
 
-    @GET("/api/user/{email}")
-    fun getProfile(@Path("email") email: String): Call<List<ProfileInfo>>
+    @GET("/api/user/{id}")
+    fun getProfile(@Path("id") id: String): Call<List<ProfileInfo>>
 
     @FormUrlEncoded
     @PUT("/api/updatePassword")

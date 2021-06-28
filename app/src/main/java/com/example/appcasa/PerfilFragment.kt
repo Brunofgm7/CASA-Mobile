@@ -53,6 +53,9 @@ class PerfilFragment : Fragment() {
             val email: SharedPreferences = activity!!.getSharedPreferences("email", Context.MODE_PRIVATE)
             email.edit().remove("email").apply()
 
+            val id: SharedPreferences = activity!!.getSharedPreferences("id", Context.MODE_PRIVATE)
+            id.edit().remove("id").apply()
+
             val count: Int =  requireActivity().supportFragmentManager.backStackEntryCount
 
             for (i in 0 until count) {
@@ -72,11 +75,11 @@ class PerfilFragment : Fragment() {
 
     private fun carregarPerfil() {
 
-        val email = activity!!.getSharedPreferences("email", AppCompatActivity.MODE_PRIVATE)
-            .getString("email", null).toString()
+        val id = activity!!.getSharedPreferences("id", AppCompatActivity.MODE_PRIVATE)
+            .getString("id", null).toString()
 
         val destinationService = ServiceBuilder.buildService(EndPointsService::class.java)
-        val requestCall = destinationService.getProfile(email)
+        val requestCall = destinationService.getProfile(id)
 
         requestCall.enqueue(object: Callback<List<ProfileInfo>> {
 

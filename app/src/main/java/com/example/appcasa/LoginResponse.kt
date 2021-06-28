@@ -5,6 +5,7 @@ class LoginResponse {
     private lateinit var token:String
     private var status:Boolean = false
     private lateinit var message:String
+    private lateinit var id:String
 
     fun getToken():String {
         return token
@@ -14,6 +15,9 @@ class LoginResponse {
     }
     fun getStatus():Boolean {
         return status
+    }
+    fun getId():String {
+        return id
     }
 
 }

@@ -76,6 +76,9 @@ class LoginFragment : Fragment() {
                                 val emailUser: SharedPreferences = activity!!.getSharedPreferences("email", MODE_PRIVATE)
                                 emailUser.edit().putString("email", email).apply()
 
+                                val idUser: SharedPreferences = activity!!.getSharedPreferences("id", MODE_PRIVATE)
+                                idUser.edit().putString("id", loginResponse.getId()).apply()
+
                                 mudarFragment(restaurantesFragment)
                             }
                         }

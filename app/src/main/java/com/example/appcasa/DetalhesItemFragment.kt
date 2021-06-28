@@ -367,10 +367,17 @@ class DetalhesItemFragment : Fragment() {
 
                 override fun onResponse(call: Call<AddItemResponse>, response: Response<AddItemResponse>) {
                     if (response.isSuccessful) {
-                        Toast.makeText(activity,"Item editado com sucesso", Toast.LENGTH_SHORT).show()
-                        requireActivity().supportFragmentManager.popBackStack()
+                        val addItemResponse = response.body()
+                        if (addItemResponse != null) {
+                            if (!addItemResponse.getStatus()) {
+                                Toast.makeText(activity, "Erro a editar o item", Toast.LENGTH_SHORT).show()
+                            } else {
+                                Toast.makeText(activity,"Item editado com sucesso",Toast.LENGTH_SHORT).show()
+                                requireActivity().supportFragmentManager.popBackStack()
+                            }
+                        }
                     } else {
-                        Toast.makeText(activity,"Erro a editar o item", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(activity, "Erro", Toast.LENGTH_SHORT).show()
                     }
                 }
 
